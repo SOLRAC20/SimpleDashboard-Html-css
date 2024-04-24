@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"><i class="fas fa-bars"></i></div>
+            <ul class="menu">
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="perfil.html">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Statistic</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fas fa-briefcase"></i>
+                        <span><input type="button" value="Usuarios" onclick="mostra('ma')" class="btn"></span>
+                    </a>
+                   <ul id="ma">
+                        <li class="none"><a href="adduser.html"><i class="fas fa-user"></i><span>Cadastrar Usuario</span></a></li>
+                        <li class="none"><a href="listaruser.html"><i class="fas fa-user"></i><span>Listar Usuario</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question-circle"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-star"></i>
+                        <span>Testimonials</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+                
+            </ul>
+        
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search" />
+                </div>
+                <img src="img/profile-5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="tabular--wrapper">
+            <h3 class="main--title">
+                Finança Dados
+            </h3>
+            <div class="table--container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Tipo de Usuario</th>
+                            <th>Email</th>
+                            <th>D/Nascimento</th>
+                            <th>D/Cadastro</th>
+                            <th>Acções</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Manuel Dias</td>
+                                <td>Staff</td>
+                                <td>manuel@gmail.com</td>
+                                <td>Office Experiencses</td>
+                                <td>Pending</td>
+                                <td class="button"><button>Editar</button><button class="red">Deletar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Manuel Dias</td>
+                                <td>Staff</td>
+                                <td>manuel@gmail.com</td>
+                                <td>Office Experiencses</td>
+                                <td>Pending</td>
+                                <td class="button"><button>Editar</button><button class="red">Deletar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Manuel Dias</td>
+                                <td>Staff</td>
+                                <td>manuel@gmail.com</td>
+                                <td>Office Experiencses</td>
+                                <td>Pending</td>
+                                <td class="button"><button>Editar</button><button class="red">Deletar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Manuel Dias</td>
+                                <td>Staff</td>
+                                <td>manuel@gmail.com</td>
+                                <td>Office Experiencses</td>
+                                <td>Pending</td>
+                                <td class="button"><button>Editar</button><button class="red">Deletar</button></td>
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="7">
+                                    Total: $1.000
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function mostra(id) {
+            if (document.getElementById(id).style.display == 'none'){
+            document.getElementById(id).style.display = 'block';
+        }else{document.getElementById(id).style.display = 'none';}
+    }
+    </script>
+</body>
+</html>

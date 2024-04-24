@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"><i class="fas fa-bars"></i></div>
+            <ul class="menu">
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Statistic</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question-circle"></i>
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-star"></i>
+                        <span>Testimonials</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+                
+            </ul>
+        
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Perfil</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search" />
+                </div>
+                <img src="img/profile-5.jpg" alt="">
+            </div>
+        </div>
+        <div class="card--container">
+            <h3 class="main--title">Perfil data</h3>
+            <div class="card--wapper">
+                <div class="form--update">
+                    <form action="" method="get">
+                        <div class="update--perfil">
+                            <div class="form--cont">
+                                <span>Nome do Usuario</span><br>
+                                <input type="text" value="Ana Carina" class="itens"><br>
+                                <span>Data de Nascimento</span><br>
+                                <input type="text" value="20/04/1999" class="itens"><br>
+                                <span>Pasword</span><br>
+                                <input type="password" value="1234" class="itens"><br>
+                            </div>
+                            <div class="img">
+                                <img src="img/profile-5.jpg" alt="" class="itens">
+                                <input type="file" alt="" class="itens">
+                            </div>    
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Actualizar" class="submit">                        
+                        </div>
+                    </form>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
